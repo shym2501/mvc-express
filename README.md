@@ -1,2 +1,2 @@
 # mvc-express
-Template MVC with Express
+Template Express with MVC pattern
