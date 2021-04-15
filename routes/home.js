@@ -1,20 +1,17 @@
 const express = require('express')
 const router = express.Router();
 
+// import page controller
+const { Home, About, Contact } = require('../controllers/home.js')
+
 // Home route
-router.get('/', (req, res) => {
-  res.send('Welcome to Home Page');
-});
+router.get('/', Home);
 
 // About route
-router.get('/about', (req, res) => {
-  res.send('Welcome to About Page');
-});
+router.get('/about', About);
 
 // Contact route
-router.get('/contact', (req, res) => {
-  res.send('Welcome to Contact Page');
-});
+router.get('/contact', Contact);
 
 // export default router
 module.exports = router
